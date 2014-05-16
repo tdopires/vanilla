@@ -8,8 +8,14 @@
             "email": "todd@vanillaforums.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vanilla/PHPMailer"
+        }
+    ],
     "require": {
-
+        "phpmailer/phpmailer": "dev-master"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "1.5.*"

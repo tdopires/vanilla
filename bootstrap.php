@@ -33,6 +33,9 @@ require_once(PATH_LIBRARY_CORE.'/functions.error.php');
 require_once(PATH_LIBRARY_CORE.'/functions.general.php');
 require_once(PATH_LIBRARY_CORE.'/functions.compatibility.php');
 
+//Composer Autoloader
+require_once(PATH_ROOT . '/vendor/autoload.php');
+
 // Include and initialize the autoloader
 require_once(PATH_LIBRARY_CORE.'/class.autoloader.php');
 Gdn_Autoloader::Start();

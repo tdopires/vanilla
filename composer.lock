@@ -3,88 +3,76 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "76b755bcc1f36cc60aac03a9c99aab72",
-    "packages": [],
-    "packages-dev": [
+    "hash": "b94467e6724de5cf575ab14fecd9c762",
+    "packages": [
         {
-            "name": "squizlabs/php_codesniffer",
-            "version": "1.5.3",
+            "name": "phpmailer/phpmailer",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "396178ada8499ec492363587f037125bf7b07fcc"
+                "url": "https://github.com/vanilla/PHPMailer.git",
+                "reference": "7b87cb10658af3e88928681d16d32e1771ca0195"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/396178ada8499ec492363587f037125bf7b07fcc",
-                "reference": "396178ada8499ec492363587f037125bf7b07fcc",
+                "url": "https://api.github.com/repos/vanilla/PHPMailer/zipball/7b87cb10658af3e88928681d16d32e1771ca0195",
+                "reference": "7b87cb10658af3e88928681d16d32e1771ca0195",
                 "shasum": ""
             },
             "require": {
-                "ext-tokenizer": "*",
-                "php": ">=5.1.2"
+                "php": ">=5.0.0"
             },
-            "suggest": {
-                "phpunit/php-timer": "dev-master"
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "*",
+                "phpunit/phpunit": "4.0.*"
             },
-            "bin": [
-                "scripts/phpcs"
-            ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-phpcs-fixer": "2.0.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
-                    "CodeSniffer.php",
-                    "CodeSniffer/CLI.php",
-                    "CodeSniffer/Exception.php",
-                    "CodeSniffer/File.php",
-                    "CodeSniffer/Report.php",
-                    "CodeSniffer/Reporting.php",
-                    "CodeSniffer/Sniff.php",
-                    "CodeSniffer/Tokens.php",
-                    "CodeSniffer/Reports/",
-                    "CodeSniffer/CommentParser/",
-                    "CodeSniffer/Tokenizers/",
-                    "CodeSniffer/DocGenerators/",
-                    "CodeSniffer/Standards/AbstractPatternSniff.php",
-                    "CodeSniffer/Standards/AbstractScopeSniff.php",
-                    "CodeSniffer/Standards/AbstractVariableSniff.php",
-                    "CodeSniffer/Standards/IncorrectPatternException.php",
-                    "CodeSniffer/Standards/Generic/Sniffs/",
-                    "CodeSniffer/Standards/MySource/Sniffs/",
-                    "CodeSniffer/Standards/PEAR/Sniffs/",
-                    "CodeSniffer/Standards/PSR1/Sniffs/",
-                    "CodeSniffer/Standards/PSR2/Sniffs/",
-                    "CodeSniffer/Standards/Squiz/Sniffs/",
-                    "CodeSniffer/Standards/Zend/Sniffs/"
+                    "class.phpmailer.php",
+                    "class.pop3.php",
+                    "class.smtp.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "LGPL-2.1"
             ],
             "authors": [
                 {
-                    "name": "Greg Sherwood",
-                    "role": "lead"
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
                 }
             ],
-            "description": "PHP_CodeSniffer tokenises PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-            "homepage": "http://www.squizlabs.com/php-codesniffer",
-            "keywords": [
-                "phpcs",
-                "standards"
-            ],
-            "time": "2014-05-01 03:07:07"
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "support": {
+                "source": "https://github.com/vanilla/PHPMailer/tree/master"
+            },
+            "time": "2014-05-16 20:53:45"
         }
     ],
-    "aliases": [],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
-    "platform": [],
-    "platform-dev": []
+    "stability-flags": {
+        "phpmailer/phpmailer": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
 }
