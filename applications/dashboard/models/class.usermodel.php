@@ -473,12 +473,16 @@ class UserModel extends Gdn_Model {
          'name' => 'Name', 
          'email' => 'Email',
          'photourl' => 'Photo',
+         'RoleID' => 'RoleID',
          'uniqueid' => NULL,
          'client_id' => NULL), TRUE);
       
       Trace($User, 'SSO User');
-      
-      $UserID = Gdn::UserModel()->Connect($UniqueID, $ClientID, $User);
+     
+      $Options = array();
+      TouchValue('SaveRoles', $Options, TRUE);
+ 
+      $UserID = Gdn::UserModel()->Connect($UniqueID, $ClientID, $User, $Options);
       return $UserID;
    }
    
